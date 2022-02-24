@@ -1,0 +1,45 @@
+﻿1)What is Maven? and usage:
+      Maven is a Build automation and Project management tool.It is used to automate tasks like compile,run tests,downloading required dependencies,
+packaging the project,deploying the project.
+Usages:
+      * Builds the project with less configuration.
+      * Automates the project building.
+      * Downloads the required dependencies automatically and configures
+the build path.
+      * These dependencies can be reused across projects.
+      * Provides build templates(archetypes) which is used to create the
+folder structure for the project.
+2)How to create a maven project?
+Using Eclipse:
+      *Click on the file option in eclipse.
+      *Click on new and select Maven project from the dropdown menu.
+      *Type in the group id and project id then click next.
+      *Select the archetype required for the project.
+Using Command Line:
+    mvn archetype:generate -DgroupId= enter groupid -DartifactId=enter artifactid -DarchetypeArtifactId=maven-archetype-enter archetype 
+-DinteractiveMode= enter boolean value
+
+3)Commands in Maven:
+* mvn clean
+* mvn install
+* mvn clean install
+* mvn --version
+* mvn install -DskipTests
+* mvn archetype:generate -DgroupId= enter groupid -DartifactId=enter artifactid -DarchetypeArtifactId=maven-archetype-enter archetype 
+-DinteractiveMode= enter boolean value
+4)Purposes:
+* mvn clean- To clean the target directory.
+* mvn install- Downloads all the dependencies required and builds the project.
+* mvn clean install- Cleans the target directory,Downloads all the dependencies required and builds the project.
+* mvn --version - Shows the installed maven version.
+* mvn install -DskipTests - Downloads all the dependencies required and builds the project by skipping the unit test cases.
+* mvn archetype:generate -DgroupId= enter groupid -DartifactId=enter artifactid -DarchetypeArtifactId=maven-archetype-enter archetype 
+-DinteractiveMode= enter boolean value - Used to create a Maven project from the command line.
+5)Maven life cycles:
+*Validate
+*Compile
+*Test
+*Package
+*Verify
+*Install
+*Deploy
